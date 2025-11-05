@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+</head>
+<body>
+    <h1 id="titulo">Aqui ficam os jogos</h1>
+    <button onclick="mudarTexto()">Clique aqui para mudar o texto</button>
+    
+    <script>
+        let nomeJogo = prompt("Digite um nome de jogo: ");
+        alert("Você digitou o jogo: " + nomeJogo);
+
+        function mudarTexto(){
+            document.getElementById("titulo").innerHTML = "O texto agora é outro!";
+        }
+        
+    </script>
+</body>
+</html>

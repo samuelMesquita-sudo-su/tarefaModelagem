@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ver.jpg" type="image/x-icon">
+    <title>Steam</title>
+    <script src="script.js"></script>
+        <!-- Colocar o JS aqui-->
+</head>
+<body>
+    <header>
+        <h1>Steam</h1>
+        <nav>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Bem vindo à Steam!</h2>
+            <p>Descubra jogos de todos os gêneros e preços!</p>
+            <button>Mostar jogo em destaque</button>
+        </section>
+        <section id="jogos" class="cards">
+            <h2>Jogos Populares</h2>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTA3MGU4ZWYtMzNmMi00NzI3LWE4ZDItMjUwMjBkZGQ0ZDEzXkEyXkFqcGc@._V1_.jpg" alt="Conflict: Global Storm">
+                <h3>Conflict: Global Storm</h3>
+                <p>Jogo de PlayStation2 </p>
+                <button onclick="conflict()">Detalhes</button>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/4/46/Grand_Theft_Auto_VI.png" alt="Grand_Theft_Auto_VI">
+                <h3>Grand Theft Auto VI</h3>
+                <p>Proximo grande lançamento da Rockstar</p>
+                <button onclick="gta()">Detalhes</button>
+            </div>
+            <div class="card">
+                <img src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png" alt="Red Dead Redemption II">
+                <h3>Red Dead Redemption 2</h3>
+                <p>Jogo de velho oeste que se passa em 1899</p>
+                <button onclick="rdr()">Detalhes</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2025 - &copy; Samuel </p>
+        <p>Desenvolvido na aula de Modelagem de Sistemas</p>
+    </footer>
+    <script src="script.js"></script> <!-- Está referenciando o arquivo externo-->
+</body>
+</html>
