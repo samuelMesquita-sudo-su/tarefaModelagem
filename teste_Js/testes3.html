@@ -1,0 +1,15 @@
+<div id="carregando">
+    <h1>Carregando site...</h1>
+</div> 
+
+<div id="conteudo" style="display: none;">
+    <h1>Bem vindo ao meu site</h1>
+    <p>Essa página aparece após o carregamento</p>
+</div>
+
+<script>
+    setTimeout(function(){
+        document.getElementById("carregando").style.display = "none";
+        document.getElementById("conteudo").style.display = "block";
+    }, 3000);
+</script>

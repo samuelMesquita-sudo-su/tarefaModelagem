@@ -1,0 +1,70 @@
+<style>
+    div{
+        padding: 20px;
+    }
+
+</style>
+
+<h2>Calculadora Simples</h2>
+<input id="n1" type="number" placeholder="Digite um número">
+<input id="n2" type="number" placeholder="Digite outro número">
+
+<div>
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+    <p id="resultado"></p>
+    <p id="mensagem">Clique aqui para mudar</p>
+    <button onmouseover="trocar()" onmouseout="voltar()">Trocar de Cor</button>
+</div>
+
+<script>
+    function trocar(){
+        document.body.style.backgroundColor = "darkblue";
+        document.body.style.color = "white";
+    }
+
+    function voltar(){
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    }
+
+    document.getElementById("mensagem").onclick = function(){
+        this.innerText = "Você clicou no texto e ele mudou!";
+    }
+
+
+    function somar(){
+        let n1 = Number (document.getElementById("n1").value);
+        let n2 = Number (document.getElementById("n2").value);
+        let soma = n1+n2;
+        
+        document.getElementById("resultado").innerText = "Resultado = " + soma;
+    }
+
+    function subtrair(){
+        let n1 = Number (document.getElementById("n1").value);
+        let n2 = Number (document.getElementById("n2".value));
+        let subtracao = n1-n2;
+
+        document.getElementById("resultado").innerText = "Resultado = " + subtracao;
+    }
+
+    function multiplicar(){
+        let n1 = Number (document.getElementById("n1").value);
+        let n2 = Number (document.getElementById("n2").value);
+        let multiplicacao = n1*n2;
+
+        document.getElementById("resultado").innerText = "Resultado = " + multiplicacao;
+    }
+
+    function dividir(){
+        let n1 = Number (document.getElementById("n1").value);
+        let n2 = Number(document.getElementById("n2").value);
+        let divisao = n1/n2; 
+
+        document.getElementById("resultado").innerText = "Resultado = " + divisao;
+    }
+
+</script>

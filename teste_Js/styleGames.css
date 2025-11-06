@@ -22,22 +22,20 @@ header{
 }
 
 img{
-    width: 280px ;
+    width: 380px ;
     height: 280px;
 }
 
-div{
-    background-color: #222934;
-    border-radius: 10px;
-    width: 800px;
-    display: inline-block;
-    margin: 50px 10px auto;
-    padding: 50px;
-    vertical-align: top;
+.images{
+    display: flex;
+    gap: 100px;
+    justify-content: center; 
+    flex-wrap: wrap;
+
 }
 
 footer{
     background-color: #000000;
     text-align: center;
-    padding: 15px;
+    padding: 40px;
 }

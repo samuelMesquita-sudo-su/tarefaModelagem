@@ -1,0 +1,17 @@
+<h2>Clique abaixo para mudar a cor</h2>
+<div id="cubo" onclick="mudar()" style="height: 100px; width: 100px; background-color: aqua;"></div>
+
+<script>
+    let colorido = false;
+    function mudar(){
+        let cubo = document.getElementById("cubo");
+        
+        if(colorido == false){
+            cubo.style.backgroundColor = "orange";
+            colorido = true;
+        } else{
+            cubo.style.backgroundColor = "aqua";
+            colorido = false;
+        }
+    }
+</script>
